@@ -5,10 +5,11 @@
 
 #### Branches
 A project should at least have the following branches
-	- master
-	- staging
-	- develop
-	- feature
+- [master](#master)
+- [staging](#staging)
+- [develop](#develop)
+- [feature](#feature)
+
 
 ##### master
 Master will always be considered as Production/Release branch. Developers should never commit their work directly on the master branch.
@@ -20,16 +21,15 @@ Staging branch will host source deployed on the staging server, rest of the proc
 Develop branch is the main point of reference for developers and will host the source deployed on QA server. All feature branches must be branched out from develop. It's the responsibility of the developer to keep his feature branch up to date with develop. Developers should never commit directly on the develop branch instead they should submit a Pull Request to merge their feature branch into develop.
 
 ##### feature
-Each feature branch belongs to one of the following:
- 	-	user story
- 	-	issue
- 	-	hotfix
- 	-	patch
+Each feature branch belongs to one of the following and should contain the suggested naming convention:
 
-Each should be branched off from develop with a naming convention such as:
- 	-	feat/XXXX
- 	-	iss/XXXX
- 	-	hotfix/XXXX
- 	-	patch/XXXX
+| Branch type  | Naming convention |
+| ------------- | ------------- |
+| user story  | feat/XXXX  |
+| issue  | iss/XXXX  |
+| hotfix  | hotfix/XXXX  |
+| patch  | patch/XXXX  |
 
- The naming convention can vary in teams but should be kept consistent across the team.
+The naming convention can vary in teams but should be kept consistent across the team. 
+
+**Note:** Prior to pushing the feature branch and submitting a [pull request](https://help.github.com/articles/using-pull-requests/), developer must update his branch from develop. Updates can be done via [merge](#merge) or [rebase](#rebase) which will be discussed below.
