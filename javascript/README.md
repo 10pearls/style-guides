@@ -4,7 +4,8 @@
 
 Other Style Guides
  - [ES5]() _(work in progress)_
- - [React]()  _(work in progress)_
+ - [React]() _(work in progress)_
+ - [Angular]() _(work in progress)_
 
 ## Table of Contents
 
