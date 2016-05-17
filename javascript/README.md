@@ -148,7 +148,7 @@ Other Style Guides
     ```
 
   <a name="objects--reserved-words"></a><a name="3.2"></a>
-  - [3.2](#objects--reserved-words) If your code will be executed in browsers in script context, don't use [reserved words](http://es5.github.io/#x7.6.1) as keys. It won't work in IE8. [More info](https://github.com/airbnb/javascript/issues/61). It’s OK to use them in ES6 modules and server-side code. jscs: [`disallowIdentifierNames`](http://jscs.info/rule/disallowIdentifierNames)
+  - [3.2](#objects--reserved-words) If your code will be executed in browsers in script context, don't use [reserved words](http://es5.github.io/#x7.6.1) as keys. It won't work in IE8. It’s OK to use them in ES6 modules and server-side code. jscs: [`disallowIdentifierNames`](http://jscs.info/rule/disallowIdentifierNames)
 
     ```javascript
     // bad
@@ -1070,16 +1070,16 @@ Other Style Guides
 
     ```javascript
     // bad
-    const AirbnbStyleGuide = require('./AirbnbStyleGuide');
-    module.exports = AirbnbStyleGuide.es6;
+    const XFiles = require('./XFiles');
+    module.exports = XFiles.scully;
 
     // ok
-    import AirbnbStyleGuide from './AirbnbStyleGuide';
-    export default AirbnbStyleGuide.es6;
+    import XFiles from './XFiles';
+    export default XFiles.scully;
 
     // best
-    import { es6 } from './AirbnbStyleGuide';
-    export default es6;
+    import { scully } from './XFiles';
+    export default scully;
     ```
 
   <a name="modules--no-wildcard"></a><a name="10.2"></a>
@@ -1089,10 +1089,10 @@ Other Style Guides
 
     ```javascript
     // bad
-    import * as AirbnbStyleGuide from './AirbnbStyleGuide';
+    import * as XFiles from './XFiles';
 
     // good
-    import AirbnbStyleGuide from './AirbnbStyleGuide';
+    import XFiles from './XFiles';
     ```
 
   <a name="modules--no-export-from-import"></a><a name="10.3"></a>
@@ -1102,13 +1102,13 @@ Other Style Guides
 
     ```javascript
     // bad
-    // filename es6.js
-    export { es6 as default } from './airbnbStyleGuide';
+    // filename scully.js
+    export { scully as default } from './XFiles';
 
     // good
-    // filename es6.js
-    import { es6 } from './AirbnbStyleGuide';
-    export default es6;
+    // filename scully.js
+    import { scully } from './XFiles';
+    export default scully;
     ```
 
   <a name="modules--no-duplicate-imports"></a>
@@ -2016,7 +2016,7 @@ Other Style Guides
     const foo = 'Whatever national crop flips the window. The cartoon reverts within the screw. Whatever wizard constrains a helpful ally. The counterpart ascends!';
 
     // bad
-    $.ajax({ method: 'POST', url: 'https://airbnb.com/', data: { name: 'John' } }).done(() => console.log('Congratulations!')).fail(() => console.log('You have failed this city.'));
+    $.ajax({ method: 'POST', url: 'https://foo.com/', data: { name: 'John' } }).done(() => console.log('Congratulations!')).fail(() => console.log('You have failed this city.'));
 
     // good
     const foo = 'Whatever national crop flips the window. The cartoon reverts within the screw. ' +
@@ -2025,7 +2025,7 @@ Other Style Guides
     // good
     $.ajax({
       method: 'POST',
-      url: 'https://airbnb.com/',
+      url: 'https://foo.com/',
       data: { name: 'John' },
     })
       .done(() => console.log('Congratulations!'))
@@ -2384,12 +2384,12 @@ Other Style Guides
   - [22.8](#naming--PascalCase-singleton) Use PascalCase when you export a constructor / class / singleton / function library / bare object.
 
     ```javascript
-    const AirbnbStyleGuide = {
-      es6: {
+    const XFiles = {
+      scully: {
       }
     };
 
-    export default AirbnbStyleGuide;
+    export default XFiles;
     ```
 
 
