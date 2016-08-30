@@ -3,7 +3,7 @@
 *A mostly reasonable approach to JavaScript*
 
 Other Style Guides
- - [ES5]() _(work in progress)_
+ - [ES5](https://github.com/10pearls/style-guides/tree/master/javascript/ES5)
  - [React]() _(work in progress)_
  - [Angular]() _(work in progress)_
 
