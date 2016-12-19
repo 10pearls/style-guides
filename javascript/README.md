@@ -5,7 +5,9 @@
 Other Style Guides
  - [ES5](https://github.com/10pearls/style-guides/tree/master/javascript/ES5)
  - [React](https://github.com/10pearls/style-guides/tree/master/javascript/React)
- - [Angular]() _(work in progress)_
+ - Angular
+   - [1.x](angular/1.x/)
+   - [2.x]() _(work in progress)_
 
 ## Table of Contents
 
