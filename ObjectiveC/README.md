@@ -1,51 +1,58 @@
 
-					------------INSTALLING OCLint----------
+## Installing OCLint
 
 There are multiple ways to install OClint. Instructions for each method are listed below:
 
-- HomeBrew Installation Method
-	1. Install Homebrew if needed 
-		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	2. Add the oclint tap to brew using the terminal
-		$ brew tap oclint/formulae
-	3. Install Oclint from the tap
-		$ brew install oclint
+### 1. HomeBrew Installation Method
 
-- Copy to /usr/local Method
-	1. Download OCLint (darwin for Mac OSX) -> https://github.com/oclint/oclint/releases
-	2. Move to downloaded OCLint folder via terminal 
-	3. Check that lib and bin folders are present in /usr/local/ by running command 
-		$ ls /usr/local/
-		a. if any of the folder dont exist create using the relevant command
-			$ sudo mkdir /usr/local/bin
-			$ sudo mkdir /usr/local/lib
-	4. Run the following two commands while still in downloaded OCLint folder
-		sudo cp bin/oclint* /usr/local/bin/
+	
+1. Install Homebrew if needed 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+2. Add the oclint tap to brew using the terminal . $ brew tap oclint/formulae
+3. Install Oclint from the tap $ brew install oclint
+
+### 2. Copy to /usr/local Method
+
+1. 	Download OCLint (darwin for Mac OSX) -> https://github.com/oclint/oclint/releases
+2. 	Move to downloaded OCLint folder via terminal 
+3.    Check that lib and bin folders are present in /usr/local/ by running command 
+ 		`$ ls /usr/local/`
+4.    If any of the folder dont exist create using the relevant command
+ 			$ sudo mkdir /usr/local/bin
+ 			$ sudo mkdir /usr/local/lib
+5. Run the following two commands while still in downloaded OCLint folder
+ 		sudo cp bin/oclint* /usr/local/bin/
 		sudo cp -RP lib/* /usr/local/lib/
-- Add to Path Method
-	1. Download OCLint (darwin for Mac OSX) -> https://github.com/oclint/oclint/releases
-	2. Add the following lines to .bashrc or any other terminal configuration files
-		OCLINT_HOME=/Users/faisal/Downloads/oclint-0.11.1 
+
+### 3. Add to Path Method
+
+1. Download OCLint (darwin for Mac OSX) -> https://github.com/oclint/oclint/releases
+2. Add the following lines to .bashrc or any other terminal configuration files
+
+
+OCLINT_HOME=/Users/faisal/Downloads/oclint-0.11.1 
 		export PATH=$OCLINT_HOME/bin:$PATH
-	NOTE: This methods requires the user to not delete the OCLint download folder as it is now added to path
+
+	
+NOTE: This methods requires the user to not delete the OCLint download folder as it is now added to path
 
 Open another instance of terminal and run the following command to check if OCLint is installed correctly for the user. 
+
 	$ oclint
 
 you should see the following message if installed correctly.
-	oclint: Not enough positional command line arguments specified!	
+	**oclint: Not enough positional command line arguments specified!**	
 	Must specify at least 1 positional arguments: See: oclint -help
 
 
 
-					------------INSTALLING XCPretty----------
+## INSTALLING XCPretty
 
 XCPretty is a formatter for the xcodebuild output. Run the following command in the terminal to install XCPretty.
-	$ gem install xcpretty
+	`$ gem install xcpretty`
 
 
 
-					------------XCODE INTEGRATION----------
+## XCODE INTEGRATION
 
 1. Create an aggregate target that will be used to execute the OCLint command from Xcode.
 2. Add new run script phase in build phases.
