@@ -14,7 +14,7 @@ Here are some examples of the types of errors that it looks for:
 - Usability problems (like not specifying an input type on a text field)
 - Manifest errors
 
-### How to import 10PLint.xml in Android Studio
+### How to import lint.xml in Android Studio
 
 1. File -> Settings
 2. Editor -> Inspection 
