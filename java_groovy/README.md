@@ -1,4 +1,4 @@
-#Naming Style
+#Java and Groovy Style Guide
 
 ##Package Names:
 Package names are all lowercase, with consecutive words simply concatenated together (no underscores). For example, com.example.deepspace, not com.example.deepSpace or com.example.deep_space.
